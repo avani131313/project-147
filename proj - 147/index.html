@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+      
+      <a-assets>
+
+        <a-assets timeout="10000">
+
+             
+    
+          <img id="carpet" src="./assets/carpet.jpg">
+          <img id="chair" src="./assets/chair.jpg">
+          <img id="floor" src="./assets/floor.jpg">
+          <img id="painting1" src="./assets/painting1.jpg">
+          <img id="painting2" src="./assets/painting2.jpg">
+          <img id="painting3" src="./assets/painting3.jpg">
+          <img id="table" src="./assets/table.jpg">
+          <img id="wall" src="./assets/wall.jpg">
+    
+        </a-assets>
+    
+        
+
+      </a-assets>
+      <a-sky color="#ECECEC"></a-sky>
+
+      
+      <a-cylinder src="#carpet" position="4 0.2 -3" radius="0.2" height="1" rotation="0 0 0" ></a-cylinder>
+      <a-box src="#table" height = "0.1" width="2.8" position="4 0.8 -3" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box src="#carpet" height = "0.05" width="2.6" position="4 0.1 -3" rotation="0 0 0" ></a-box>
+
+
+      <a-cylinder src="#floor" position="4 4.5 -3" radius="0.05" height="1"  rotation="0 0 0"></a-cylinder>
+      <a-torus-knot src="#floor" position="4 3.8 -3"  arc="140" p="2" q="7" radius="0.2" radius-tubular="0.06"></a-torus-knot>
+      
+
+      <a-cylinder src="#chair" position="1.5 0 -3" radius="0.5" height="0.08" rotation="0 0 0"></a-cylinder>
+      <a-cylinder src="#chair" position="6.5 0 -3" radius="0.5" height="0.08"  rotation="0 0 0"></a-cylinder>
+      <a-cylinder src="#chair" position="1.5 0.2 -3" radius="0.1" height="0.6"  rotation="0 0 0"></a-cylinder>
+      <a-cylinder src="#chair" position="6.5 0.2 -3" radius="0.1" height="0.6"  rotation="0 0 0"></a-cylinder>
+      <a-box src="#chair" height = "0.05" width="1" position="1.5 0.5 -3" rotation="0 0 0" ></a-box>
+      <a-box src="#chair" height = "0.05" width="1" position="6.5 0.5 -3" rotation="0 0 0" ></a-box>
+      <a-cylinder src="#chair" position="1 1.2 -3" radius="0.8" height="0.08"  rotation="90 90 0"></a-cylinder>
+      <a-cylinder src="#chair" position="7 1.2 -3" radius="0.8" height="0.08"  rotation="90 90 0"></a-cylinder>
+
+
+      <a-box src="#painting1" height = "1" width="2" position="2 4 -6.3" rotation="180 180 90" ></a-box>
+      <a-box src="#painting2"height = "1" width="2" position="4 4 -6.3" rotation="180 180 90" ></a-box>
+      <a-box src="#painting3"height = "1" width="2" position="6 4 -6.3" rotation="180 180 90" ></a-box>
+
+      
+      
+      <a-plane src="#floor"position="4 0 -4" rotation="-90 0 0" width="7" height="4.5" color="#7BC8A4" src="https://ibb.co/QKH2w2k"></a-plane>
+      <a-plane src="#wall"position="4 3.5 -6" rotation="180 180 0" width="7" height="7" color="white"></a-plane>
+      
+      
+      
+      
+      
+    </a-scene>
+</body>
+
+</html>
